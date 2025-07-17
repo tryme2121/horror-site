@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: black;
+  color: red;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overlay {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: crimson;
+}
+@keyframes blink {
+  0%, 95%, 100% {
+    transform: scaleY(1);
+  }
+  96%, 99% {
+    transform: scaleY(0.05);
+  }
+}
+
+#eye {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: blink 6s infinite;
+  transform-origin: center center;
+  box-shadow: 0 0 30px red;
+}
